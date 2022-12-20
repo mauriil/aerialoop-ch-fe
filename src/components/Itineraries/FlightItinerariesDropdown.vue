@@ -15,7 +15,7 @@ export default {
     async getItineraries() {
       try {
         await axios
-          .get("http://localhost:3005/itineraries")
+          .get(`${import.meta.env.VITE_BACKEND_BASE_URL}/itineraries`)
           .then((response) => {
             this.itineraries = response.data;
             this.itineraries = this.itineraries.map((itinerarie) => {
