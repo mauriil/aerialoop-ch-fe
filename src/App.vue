@@ -15,22 +15,25 @@
     </div>
   </header>
 
-  <RouterView />
+  <FlightData ref="FlightDataComponent" />
 </template>
 
 <script>
 import DashboardTitle from "./components/DashboardTitle.vue";
 import FlightItinerariesDropdown from "./components/Itineraries/FlightItinerariesDropdown.vue";
+import FlightData from "./components/Flights/FlightData.vue";
 
 export default {
   name: "App",
+  data() {},
   components: {
     DashboardTitle,
     FlightItinerariesDropdown,
+    FlightData,
   },
   methods: {
-    onFlightIdSelected(flightId) {
-      console.log("flightId", flightId);
+    onFlightIdSelected(flightFile) {
+      this.$refs.FlightDataComponent.getFlightData(flightFile);
     },
   },
 };
