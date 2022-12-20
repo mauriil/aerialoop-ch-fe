@@ -4,6 +4,6 @@
 
 <template>
   <div>
-    <h3>Data page.</h3>
+    <h3>Flight data will appear here.</h3>
   </div>
 </template>

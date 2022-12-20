@@ -1,23 +1,39 @@
-
 <template>
   <header>
-    <img alt="Aerialoop logo" class="logo" src="@/assets/aerialoop-logo-rounded.png" width="125" height="125" />
+    <img
+      alt="Aerialoop logo"
+      class="logo"
+      src="@/assets/aerialoop-logo-rounded.png"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
       <DashboardTitle title="Flights Overview" />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
+      <FlightItinerariesDropdown @flightIdSelected="onFlightIdSelected" />
     </div>
   </header>
 
   <RouterView />
 </template>
 
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import DashboardTitle from './components/DashboardTitle.vue'
+<script>
+import DashboardTitle from "./components/DashboardTitle.vue";
+import FlightItinerariesDropdown from "./components/Itineraries/FlightItinerariesDropdown.vue";
+
+export default {
+  name: "App",
+  components: {
+    DashboardTitle,
+    FlightItinerariesDropdown,
+  },
+  methods: {
+    onFlightIdSelected(flightId) {
+      console.log("flightId", flightId);
+    },
+  },
+};
 </script>
 <style scoped>
 header {

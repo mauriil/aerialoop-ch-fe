@@ -1,5 +1,5 @@
 <script setup>
-import FlightData from '../components/FlightData.vue'
+import FlightData from '../components/Flights/FlightData.vue'
 </script>
 
 <template>
