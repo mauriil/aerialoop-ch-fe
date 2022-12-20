@@ -41,9 +41,23 @@ export default {
 };
 </script>
 
+<style scoped>
+.dropdown {
+  margin-top: 15px;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-text);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+</style>
+
 <template>
   <div>
-    <select @change="onChange($event)">
+    <select @change="onChange($event)" class="dropdown">
       <option disabled selected>Select an itinerary</option>
       <option v-if="itineraries.length === 0" disabled value="">
         No itineraries to show

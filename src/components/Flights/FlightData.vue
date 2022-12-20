@@ -10,7 +10,7 @@ export default {
   },
   mounted() {},
   methods: {
-    async getFlightData(flightFile) {
+    getFlightData(flightFile) {
       axios
         .get(`${import.meta.env.VITE_BACKEND_BASE_URL}/flights/${flightFile}`)
         .then((response) => {
@@ -29,6 +29,7 @@ export default {
 
 <template>
   <div>
-    <h3>Flight data will appear here.</h3>
+    <h3 v-if="flightData.length === 0">Flight data will appear here.</h3>
+    <h3 v-else>{{flightData[1]}}</h3>
   </div>
 </template>
