@@ -8,7 +8,7 @@ Instructions to have everything you need to put this deployment into operation.
 
 ### Prerequisites 📋 ###
 
-* NodeJS installed.
+* NodeJS 18 installed.
 * VueJs 3.
 * A web browser (Mozilla, Chrome, Safari, etc).
 
