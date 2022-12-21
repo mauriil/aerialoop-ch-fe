@@ -1,20 +1,25 @@
-# vue-project
+# Aerialoop-Challenge - Lahitte Mauricio #
 
-This template should help get you started developing with Vue 3 in Vite.
+Aerialoop frontend to graphical represent the flight data
 
-## Recommended IDE Setup
+## Set-Up & Running 🔧 ##
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Instructions to have everything you need to put this deployment into operation.
 
-## Customize configuration
+### Prerequisites 📋 ###
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+* NodeJS installed.
+* VueJs 3.
+* A web browser (Mozilla, Chrome, Safari, etc).
 
-## Project Setup
+### Install 🛠️ ###
 
-```sh
+Once you have cloned or downloaded a .zip of the project in a folder of your like run:
+```
 npm install
 ```
+just to have all the dependence packages necessaries to run the server.
+
 
 ### Compile and Hot-Reload for Development
 
@@ -28,8 +33,11 @@ npm run dev
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Misc configuration ⚙️ ##
 
-```sh
-npm run lint
-```
+This project has a enviroment config file ".env.example" you should use this file as the basis for generating your own .env
+
+## Author ✒️
+
+* [Lahite, Mauricio Eduardo](https://www.linkedin.com/in/mauricio-lahitte/)
+
